@@ -1,0 +1,32 @@
+{
+  "name": "ap-react-kit-example",
+  "description": "Example app for ap-react-kit",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "start": "react-native start",
+    "pods": "pod-install --quiet",
+    "postinstall": "patch-package"
+  },
+  "dependencies": {
+    "@react-navigation/native": "^6.0.11",
+    "@react-navigation/native-stack": "^6.7.0",
+    "react": "17.0.2",
+    "react-native": "0.68.2",
+    "react-native-admob-native-ads": "^0.6.0",
+    "react-native-cli": "^2.0.1",
+    "react-native-google-mobile-ads": "^7.0.1",
+    "react-native-paper": "^4.12.4",
+    "react-native-safe-area-context": "^4.3.1",
+    "react-native-screens": "^3.15.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/runtime": "^7.12.5",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "metro-react-native-babel-preset": "^0.67.0",
+    "patch-package": "^6.4.7",
+    "postinstall-postinstall": "^2.1.0"
+  }
+}
