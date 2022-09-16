@@ -1,6 +1,6 @@
 {
   "name": "ap-react-kit",
-  "version": "0.2.5",
+  "version": "0.3.0",
   "description": "test",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -40,7 +40,8 @@
   },
   "homepage": "https://github.com/adpushup/ApReactKit#readme",
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
   },
   "devDependencies": {
     "@arkweid/lefthook": "^0.7.7",

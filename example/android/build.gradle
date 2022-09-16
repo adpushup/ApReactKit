@@ -4,10 +4,10 @@ import org.apache.tools.ant.taskdefs.condition.Os
 
 buildscript {
     ext {
-        buildToolsVersion = "31.0.0"
+        buildToolsVersion = "33.0.0"
         minSdkVersion = 21
-        compileSdkVersion = 31
-        targetSdkVersion = 31
+        compileSdkVersion = 33
+        targetSdkVersion = 33
 
         if (System.properties['os.arch'] == "aarch64") {
             // For M1 Users we need to use the NDK 24 which added support for aarch64
@@ -49,18 +49,5 @@ allprojects {
         }
         google()
         maven { url 'https://www.jitpack.io' }
-        // AdPushup Maven Repository
-        maven {
-            name 'apappkit'
-            url 'https://pkgs.dev.azure.com/adpushup/_packaging/adpushup/maven/v1'
-            credentials {
-                username "adpushup"
-                password "grs27r4xxaob7rds3h64xlh2ft6va2kx54l5jaqmhd3doh3ubc3q"
-            }
-            content {
-                // Does only include this group
-                includeGroup "adpushup"
-            }
-        }
     }
 }
